@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIDE AND SHOW METHOD</title>
+    <style>
+        #mydiv{
+            width: 30vw;
+            height: 30vh;
+            background-color: lightblue;
+            border: 1px solid dotted;
+            position: absolute;
+            border: 7px dotted black;
+
+        }
+
+
+        #mydivone{
+            width: 30vw;
+            height: 30vh;
+            background-color: lightblue;
+            border: 1px solid dotted;
+            position: absolute;
+            border: 7px dotted black;
+
+        }
+        #animationbtn{
+            padding:1vh 2vw;
+            background-color: aqua;
+            cursor: pointer;
+            position: absolute;
+            top: 80vh;
+        }
+
+
+        #animationbtn:hover{
+            padding:1vh 2vw;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+
+
+
+
+
+
+
+        #animationbtnone{
+            padding:1vh 2vw;
+            background-color: aqua;
+            cursor: pointer;
+            position: absolute;
+            top: 80vh;
+            left: 30vw;
+        }
+
+
+        #animationbtnone:hover{
+            padding:1vh 2vw;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+    <div id="mydiv">
+        <h1>I AM LEARNING JQUERY</h1>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+    </div>
+
+
+
+    <button id="animationbtn">ANIMATION</button>
+    
+    
+
+<!-- second mydiv -->
+<div id="mydivone">
+    <h1>I AM LEARNING JQUERY</h1>
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+</div>
+
+<button id="animationbtnone">ANIMATION ONE</button>
+    <script src="jquery.js"></script>
+    <script>
+$(document).ready(function(){
+    $("#animationbtn").click(function(){
+        $("#mydiv").animate({
+            width:"200px",
+            borderWidth:"14px",
+            left:"30vw",
+            top:"50vh"
+
+        })
+    })
+
+
+// if you want to animate one by one and with speed or call 
+// fumction then:-
+
+
+
+$("#animationbtnone").click(function(){
+        $("#mydivone").animate({width:"40vw"},3000,function(){
+            console.log("YOUR ANIMATION IS RUNNING");
+        })
+        $("#mydivone").animate({height:"40vh"})
+        $("#mydivone").animate({fontSize:"6vh"})
+        $("#mydivone").animate({borderWidth:"16vh"})
+    })
+
+
+
+})
+
+
+
+    </script>
+    
+</body>
+</html>

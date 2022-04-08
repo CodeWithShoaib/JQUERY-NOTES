@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #mydiv{
+            background-color: aquamarine;
+            padding: 5vw;
+            border: 15px solid black;
+            width: 30vw;
+            height: 30vh;
+            margin:5vh 5vw;
+            
+
+        }
+        #width-btn{
+padding: 1vh 2vw;
+background-color: aquamarine;
+color: black;
+cursor: pointer;
+        }
+        #height-btn{
+padding: 1vh 2vw;
+background-color: aquamarine;
+color: black;
+cursor: pointer;
+        }
+        #width-btn:hover{
+            background-color: black;
+            color: white;
+        }
+        #height-btn:hover{
+            background-color: black;
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="mydiv">
+        <h1>I AM LEARNIGN JQUERY</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, in perspiciatis! Perferendis deleniti
+     <br>       dolorum quis consectetur, nostrum perspiciatis, eaque doloremque tenetur deserunt magnam quam quia, voluptas
+         <br>   laudantium voluptatum? Nisi, dolores?</p>
+    </div>
+    <button id="width-btn">WIDTH</button>
+    <button id="height-btn">HEIGHT</button>
+    <script src="jquery.js"></script>
+    <script>
+        // for width method
+$(document).ready(function(){
+    $("#width-btn").click(function(){
+        var w= $("#mydiv").width();
+        console.log(w);
+    })
+
+// for height method
+    $("#height-btn").click(function(){
+        var h= $("#mydiv").height();
+        console.log(h);
+    })
+
+
+
+})
+    </script>
+</body>
+
+</html>

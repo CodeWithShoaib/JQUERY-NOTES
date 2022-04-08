@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REPLACE WITH CONCEPT</title>
+    <style>
+        #mydiv {
+            width: 40vw;
+            height: 40vh;
+            border: 1px solid dotted;
+            background-color: aquamarine;
+        }
+
+        #new {
+            color: red;
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <H1>WRAP AND UNWRPA CONCEPT</H1>
+    <div id="mydiv">
+        <h1>HELLO GEEKYSHOWS</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quas deserunt, ad beatae eius eaque veritatis
+            molestiae consequuntur accusantium at, natus nisi! Rerum facilis impedit ab doloribus, ullam qui earum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quas deserunt, ad beatae eius eaque veritatis
+            molestiae consequuntur accusantium at, natus nisi! Rerum facilis impedit ab doloribus, ullam qui earum.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quas deserunt, ad beatae eius eaque veritatis
+            molestiae consequuntur accusantium at, natus nisi! Rerum facilis impedit ab doloribus, ullam qui earum.</p>
+
+    </div>
+    <button id="wrapbtn">WRAP</button>
+    <button id="unwrapbtn">UNWRAP</button>
+    <script src="jquery.js"></script>
+    <!-- IMPORTANT NOTE REPLACE ALL ONLY REPLACE
+             DATA 
+        WITH TAG AND REPLACE WITH REPLACING TAG AND
+        TEXT BOTH  -->
+
+    <script>
+        $(document).ready(function () {
+            $("#wrapbtn").click(function () {
+                $("#mydiv h1").wrap("<div id='new'></div>")
+            })
+            $("#unwrapbtn").click(function () {
+                $("#mydiv h1").unwrap()
+            })
+
+        })
+
+
+    </script>
+</body>
+
+</html>

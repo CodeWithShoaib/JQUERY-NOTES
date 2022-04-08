@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENT TYPE</title>
+    <style>
+        #mydiv{
+            width: 40vw;
+            height: 40vh;
+            background-color: aquamarine;
+        }
+        h2{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>EVENT TYPE CONCEPT</h1>
+    <div id="mydiv">
+
+    </div>
+    <h2></h2>
+    <input type="text" id="inp">
+    <script src="jquery.js"></script>
+    <script>
+$(document).ready(function(){
+    $("#mydiv").on("click dblclick mouseover mouseout",function(e){
+        $("h2").html(e.type+"which: "+e.which);
+    })
+
+
+    $("#inp").on("keydown",function(e){
+        $("h2").html(e.type+"which: "+e.which);
+    })
+})
+
+// now find the ascii value which is written in the input type
+    </script>
+</body>
+</html>

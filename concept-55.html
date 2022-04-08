@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENT TYPE</title>
+    <style>
+        #mydiv{
+            width: 40vw;
+            height: 40vh;
+            background-color: aquamarine;
+        }
+        h2{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>EVENT TYPE CONCEPT</h1>
+    <div id="mydiv">
+
+    </div>
+    <h2></h2>
+    <script src="jquery.js"></script>
+    <script>
+$("#mydiv").on("click dblclick mouseover mouseout", function(event){
+  $("h2").html("Event: " + event.type);
+});
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLASS METHOD</title>
+    <style>
+        .first{
+            background-color: yellow;
+            color: white;
+        }
+        .second{
+            background-color: red;
+            color: white;
+        }
+        .third{
+            background-color: green;
+            color: white;
+        }
+        #myid{
+            width: 30vw;
+            height: 30vh;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="myid"> 
+        <h1>I AM LEARNING JQUERY</h1>
+    </div>
+    <button id="a">ADD FUNCTION</button>
+    <button id="r">REMOVE FUNCTION</button>
+    <button id="t">TOGGLE FUNCTION</button>
+    <script src="jquery.js"></script>
+    <script>
+        // you can also add two classess in same functuon
+        // and also add in two id
+        $(document).ready(function(){
+            // add class function add class and its specififcation
+            $("#a").click(function(){
+                $("#myid").addClass("second");
+                
+
+            })
+            // remove class function remove class
+            //  and its specififcation
+            $("#r").click(function(){
+                $("#myid").removeClass("second");
+            })
+// toggle class function toggle class
+            //  and its specififcation
+            $("#t").click(function(){
+                $("#myid").toggleClass("second");
+            })
+
+
+        })
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIDE AND SHOW METHOD</title>
+    <style>
+        #mydiv{
+            width: 30vw;
+            height: 30vh;
+            background-color: lightblue;
+            border: 1px solid dotted;
+
+        }
+        button{
+            padding:1vh 2vw;
+            background-color: aqua;
+            cursor: pointer;
+        }
+
+
+        button:hover{
+            padding:1vh 2vw;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="mydiv">
+        <h1>I AM LEARNING JQUERY</h1>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+    </div>
+    <button id="fadeinbtn">FADE IN</button>
+    <button id="fadeoutbtn">FADE OUT</button>
+    <button id="fadetogglebtn">FADE TOGGLE</button>
+    <button id="fadetobtn">FADETO BTN</button>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#fadeoutbtn").click(function(){
+                $("#mydiv").fadeOut("slow");
+            })
+
+// fade in function
+
+$("#fadeinbtn").click(function(){
+                $("#mydiv").fadeIn("slow");
+            })
+
+// fade toggle function
+$("#fadetogglebtn").click(function(){
+                $("#mydiv").fadeToggle("slow");
+            })
+
+
+// fadetoo function
+// in this function you can set three parameters
+// 1-timmings
+// 2-opecity b/w 0 to 1
+// 3-call back function
+
+$("#fadetobtn").click(function(){
+                $("#mydiv").fadeTo(2000,0.6);
+            })
+
+
+
+        })
+    </script>
+    
+</body>
+</html>

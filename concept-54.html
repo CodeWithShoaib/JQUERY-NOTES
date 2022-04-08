@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wa{
+            width: 50vw;
+            height: 50vh;
+            background-color: aquamarine;
+            color: black;
+        }
+        .box1{
+            width: 10vw;
+            height: 10vh;
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="wa">
+
+    </div>
+    <div class="box1">
+
+    </div>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(document).mousemove(function(even){
+                $(".wa").text("THE X AXIS OF X IS"+even.pageX+"THE Y AXIS OF X IS"+even.pageY);
+                // $(".wa").text("THE Y AXIS OF X IS"+even.pageY);
+    // this is the code through a box element axis and mouse 
+    // axis is locatted  same      
+                var x=event.pageX;
+var y=event.pageY;
+$(".box1").offset({top:y,left:x});
+            })
+
+
+        })
+    </script>
+</body>
+</html>

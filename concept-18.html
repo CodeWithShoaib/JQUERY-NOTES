@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APPNED AND PREPEND CONCEPT</title>
+</head>
+<body>
+    <h1>APPEND AND PREPEND LIST CONCEPT</h1>
+    <ol id="unorderlist">
+        <li>ITEM 1</li>
+        <li>ITEM 2</li>
+        <li>ITEM 3</li>
+        <li>ITEM 4</li>
+        <li>ITEM 5</li>
+    </ol>
+    <button id="x">APPNED</button>
+    <button id="y">prePPNED</button>
+    <script src="jquery.js"></script>
+    <script>
+// IMPORTANT NOTE:-APPNED AND PREPEND WORK INTERNALLY ITS ADDING 
+// THE ELEMNTS,TEXT INTERLLY
+// BUT BEFORE AND AFTER ADD THE ELEMENTS EXTERNALLY
+
+$(document).ready(function(){
+$("#x").click(function(){
+    $("#unorderlist").append("<li>ITEM NEW</li>")
+})
+
+
+$("#y").click(function(){
+    $("#unorderlist").prepend("<li>ITEM NEW</li>")
+})
+})
+    </script>
+</body>
+</html>

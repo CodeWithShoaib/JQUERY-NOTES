@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wrap all and wrap inner</title>
+    <style>
+        .w{
+            background-color: pink;
+            padding: 5vw;
+        }
+        .y{
+            color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+
+    <H1>WRAP AND UNWRPA CONCEPT</H1>
+    <div id="mydiv">
+        <h1>HELLO GEEKYSHOWS</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quas deserunt, ad beatae eius eaque veritatis
+            molestiae consequuntur accusantium at, natus nisi! Rerum facilis impedit ab doloribus, ullam qui earum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quas deserunt, ad beatae eius eaque veritatis
+                molestiae consequuntur accusantium at, natus nisi! Rerum facilis impedit ab doloribus, ullam qui earum.</p>
+            
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quas deserunt, ad beatae eius eaque veritatis
+                    molestiae consequuntur accusantium at, natus nisi! Rerum facilis impedit ab doloribus, ullam qui earum.</p>
+                
+        </div>
+        <button id="wrapallbtn">WRAP ALL</button>
+        <button id="wrapinnerbtn">WRAP INNER</button>
+        <script src="jquery.js"></script>
+        <script>
+$(document).ready(function(){
+    $("#wrapallbtn").click(function(){
+        $("p").wrapAll("<div class='w'></div>")
+    })
+
+    $("#wrapinnerbtn").click(function(){
+        $("H1").wrapAll("<div class='y'></div>")
+    })
+})
+        </script>
+</body>
+</html>

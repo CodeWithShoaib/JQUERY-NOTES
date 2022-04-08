@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #mydiv{
+            background-color: aquamarine;
+            padding: 5vw;
+            border: 15px solid black;
+            width: 30vw;
+            height: 30vh;
+            margin:5vh 5vw;
+            
+
+        }
+        #width-btn{
+padding: 1vh 2vw;
+background-color: aquamarine;
+color: black;
+cursor: pointer;
+        }
+        #height-btn{
+padding: 1vh 2vw;
+background-color: aquamarine;
+color: black;
+cursor: pointer;
+        }
+        #width-btn:hover{
+            background-color: black;
+            color: white;
+        }
+        #height-btn:hover{
+            background-color: black;
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="mydiv">
+        <h1>I AM LEARNIGN JQUERY</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, in perspiciatis! Perferendis deleniti
+     <br>       dolorum quis consectetur, nostrum perspiciatis, eaque doloremque tenetur deserunt magnam quam quia, voluptas
+         <br>   laudantium voluptatum? Nisi, dolores?</p>
+    </div>
+    <button id="position-btn"> POSITION</button>
+    <button id="offset-btn"> OFFSET</button>
+    <script src="jquery.js"></script>
+    <script>
+  
+$(document).ready(function(){
+    $("#position-btn").click(function(){
+       var p= $("#mydiv").position();
+       console.log(p)
+    })
+    $("#offset-btn").click(function(){
+       var p= $("#mydiv").offset();
+       console.log(p)
+    })
+})
+</script>
+</body>
+
+</html>

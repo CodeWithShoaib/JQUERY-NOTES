@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEFORE AND AFTER METHOD CONCEPT</title>
+    <style>
+        .talha{
+            width: 30vw;
+            height: 30vh;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="talha">
+        <h1>HELLO GEEKYSHOWS</h1>
+    </div>
+    <button id="x">BEFORE</button>
+    <button id="y">AFTER</button>
+
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#x").click((){
+                $(".talha").before("<h1>BEFOTRE ADDING</h1>")
+            })
+
+
+            $("#y").click((){
+                $(".talha").after("<h1>AFTER ADDING</h1>")
+            })
+        })
+    </script>
+</body>
+</html>

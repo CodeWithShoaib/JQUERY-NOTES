@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENT TYPE</title>
+    <style>
+        #mydiv{
+            width: 40vw;
+            height: 40vh;
+            background-color: aquamarine;
+        }
+        h2{
+            color: red;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+            border: 1px solid white;
+            background-color: white;
+            padding: 1vh 2vw;
+        }
+        a:hover{
+            background-color: black;
+            color: white;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>EVENT TYPE CONCEPT</h1>
+    <div id="mydiv">
+        <h4>I MA LEARNING JQUERY</h4>
+<p>Lorem ipsum dolor sit amet.</p>
+<p>Lorem ipsum dolor sit amet.</p>
+<p>Lorem ipsum dolor sit amet.</p>
+
+    </div>
+    
+    <h2></h2>
+    
+    <script src="jquery.js"></script>
+    <script>
+//   SHOWING THE INDEX OF P      
+$(document).ready(function(){
+$("p").each(function(i){
+    $(this).on("click",{value:i},function(event){
+        alert(event.data.value)
+    })
+})
+})
+    </script>
+</body>
+</html>

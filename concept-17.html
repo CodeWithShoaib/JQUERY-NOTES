@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APPNED AND PREPEND CONCEPT</title>
+    <style>
+        #myid{
+width: 30vw;
+height: 70vh;
+background-color: lightcoral;
+color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="myid">
+        <h1>I AM LEARNING JQUERY</h1>
+
+    </div>
+    <button id="appnedone">APPNED</button>
+    <button id="prependone">PREPEND</button>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#appnedone").click(function(){
+                $("#myid").append("<h2>MY FRIEND NAME IS ASIF</h2>")
+            })
+            $("#prependone").click(function(){
+                $("#myid").prepend("<h1>YAHOO BABA WITH SHOAIB NASIR</h1>")
+            })
+        })
+    </script>
+</body>
+</html>

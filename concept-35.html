@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIDE AND SHOW METHOD</title>
+    <style>
+        #mydiv{
+            width: 30vw;
+            height: 30vh;
+            background-color: lightblue;
+            border: 1px solid dotted;
+
+        }
+        button{
+            padding:1vh 2vw;
+            background-color: aqua;
+            cursor: pointer;
+        }
+
+
+        button:hover{
+            padding:1vh 2vw;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="mydiv">
+        <h1>I AM LEARNING JQUERY</h1>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+    </div>
+    <button id="slideupbtn">SLIDE UP</button>
+    <button id="slidedownbtn">SLIDE DOWN</button>
+    <button id="slidetogglebtn">SLDIE TOGGLE</button>
+    
+    <script src="jquery.js"></script>
+    <script>
+
+//IN SLIDE FUNCTION THERE ARE ONLY TWO PARAMETERS ACCEPPTED  
+// 1-timming
+// 2-call back function   
+        $(document).ready(function(){
+            // slide up function
+            $("#slideupbtn").click(function(){
+                $("#mydiv").slideUp("slow");
+            })
+
+// slide down in function
+
+$("#slidedownbtn").click(function(){
+                $("#mydiv").slideDown("slow");
+            })
+
+// slide  toggle function
+$("#slidetogglebtn").click(function(){
+                $("#mydiv").slideToggle("slow");
+            })
+
+
+
+
+
+
+
+        })
+    </script>
+    
+</body>
+</html>

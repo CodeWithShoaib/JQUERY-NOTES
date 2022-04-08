@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>key function</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <h1 id="myname">YAHOO BABA</h1>
+    <script>
+        $(document).ready(function(){
+            $("#myname").css("color","red")
+        });
+// keypress function:-
+
+        $(document).ready(function(){
+            $("body").keypress(function(){
+                $("body").css('background-color','red');
+            })
+        });
+
+// keyup function:-
+
+$(document).ready(function(){
+            $("body").keyup(function(){
+                $("body").css('background-color','orange');
+            })
+        });
+
+
+
+
+        // keydown function:-
+
+$(document).ready(function(){
+            $("body").keyup(function(){
+                $("body").css('background-color','blue');
+            })
+        });
+
+
+    </script>
+</body>
+</html>

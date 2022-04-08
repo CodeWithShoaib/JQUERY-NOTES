@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLONE METHOD</title>
+    <style>
+        .talha {
+            width: 30vw;
+            height: 30vh;
+            border: 1px solid black;
+            background-color: bisque;
+            color: black;
+        }
+
+        .hello {
+            width: 50vw;
+            margin-top: 4vh;
+            height: 50vh;
+            border: 1px solid red;
+            background-color: bisque;
+            color: black;
+        }
+        #x{
+            padding: 1vh 2vw;
+            background-color: red;
+            color: white;
+            transition: all linear 0.2s;  
+            cursor: pointer;         
+        }
+        #x:hover{
+            color: black;
+            background-color: aquamarine;
+            
+        }
+        .container{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="talha">
+            <h1>HELLO GEEKYSHOWS</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quos obcaecati dolorem maxime nostrum aliquam
+    <br>            excepturi laboriosam accusantium, cumque, tempora nobis hic illum culpa sed possimus saepe unde cum veniam!
+            </p>
+        </div>
+        <div class="hello">
+    
+        </div>
+      
+    </div>
+    <button id="x">CLONE ENTER</button>
+    <!-- <button id="y">REMOVE</button> -->
+    <script src="jquery.js"></script>
+    <script>
+$(document).ready(function(){
+    $("#x").click(function(){
+        $(".talha h1").clone().appendTo(".hello");
+    })
+
+
+    $("#x").click(function(){
+        $(".talha p").clone().appendTo(".hello");
+    })
+
+})
+    </script>
+
+</body>
+
+</html>

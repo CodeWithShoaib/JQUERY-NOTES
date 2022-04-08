@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+        .ul{
+            margin-left: 5vw;
+        }
+    </style>
+    <script src="jquery.js"></script>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="wao">WAOO</h1>
+        <div class="firstdiv">
+            <h1>HTML</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque explicabo ipsa corrupti maiores iusto!
+                Obcaecati expedita quidem minus. Officiis, dolores quo molestiae corrupti vero veritatis laborum velit odit
+                maiores reiciendis!</p>
+        </div>
+    
+        <div class="firstdiv">
+            <h1>CSS</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque explicabo ipsa corrupti maiores iusto!
+                Obcaecati expedita quidem minus. Officiis, dolores quo molestiae corrupti vero veritatis laborum velit odit
+                maiores reiciendis!</p>
+        </div>
+
+    </div>
+    
+
+<ul class="ul">
+    <li>HOME</li>
+    <li class="wao">ABOUT US</li>
+    <li>CONTACT US</li>
+    <li class="wao">SERVICES</li>
+
+</ul>
+
+
+    <script>
+
+// $(document).ready(function(){
+
+//     $('.ul').css("color","red");
+// });
+
+
+
+// $(document).ready(function(){
+
+// $('.ul').css("border","2px solid white");
+// });
+
+
+
+// $(document).ready(function(){
+
+// $('.firstdiv').css("background-color","green");
+// });
+
+
+
+
+// $(document).ready(function(){
+
+// $('.ul .wao').css("border","3px solid yellow");
+// });
+
+
+// $(document).ready(function(){
+
+// $('.wao').css("color","blue");
+// });
+
+
+
+
+// ul li me greater than 2
+$(document).ready(function(){
+
+$('ul li:gt(2)').css("color","blue");
+});
+
+// ul  li me less than 2
+$(document).ready(function(){
+
+$('ul li:lt(2)').css("color","blue");
+});
+
+// ul li:eq(0): ul me li me index no 0
+
+$(document).ready(function(){
+
+$('ul li:eq(0)').css("color","blue");
+});
+
+    </script>
+
+</body>
+
+</html>

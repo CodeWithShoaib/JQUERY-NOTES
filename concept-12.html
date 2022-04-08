@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQUERY METHODS</title>
+    <style>
+        #myid{
+width: 30vw;
+height: 30vh;
+background-color: lightcoral;
+color: white;        }
+#myidone{
+width: 30vw;
+height: 30vh;
+background-color: lightcoral;
+color: white;        }
+.red{
+    color: red;
+}
+.yellow{
+    color: yellow;
+}
+
+
+</style>
+</head>
+
+<body>
+    <div id="myid" class="waooo score">
+        <h1>I AM LEARNING JQUERY</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad necessitatibus laborum unde enim tempore debitis
+            consequuntur sed. Architecto saepe nihil veritatis, natus cupiditate, harum, voluptatem officia vero aliquam
+            perspiciatis quae.</p>
+    </div>
+
+
+
+
+
+    <div id="myidone" class="waooo score">
+        <h1>I AM LEARNING JQUERY</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad necessitatibus laborum unde enim tempore debitis
+            consequuntur sed. Architecto saepe nihil veritatis, natus cupiditate, harum, voluptatem officia vero aliquam
+            perspiciatis quae.</p>
+    </div>
+
+
+    <button id="change">CHANGE</button>
+    <script src="jquery.js"></script>
+    <script>
+//  IMPORTANT NOTE:-text only change or dispaly the inner text
+//  but html method change and dispaly both element or text  
+// THIS IS FOT TEXT METHOD:-     
+$(document).ready(function(){
+    $("#change").click(function(){
+        $("#myid h1").text("HELLO WORLD");
+        $("#myid p").text("TODAY IS SUNDAY");
+    })
+
+
+})
+// THIS IS FOR HTML METHOD:-
+
+$(document).ready(function(){
+    $("#change").click(function(){
+        $("#myidone p").html("<b>WE ARE PAKISTANI</b>");
+        $("#myid h1").attr("class","red");
+    })
+})
+
+// this is for attribute:-
+
+
+
+    </script>
+</body>
+
+</html>

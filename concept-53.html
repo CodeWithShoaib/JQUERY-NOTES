@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EACH METHOD</title>
+</head>
+<body>
+    <h1>EACH METHOD</h1>
+    <ul>
+        <li>apple</li>
+        <li>orange</li>
+
+        <li>banana</li>
+        <li>grapes</li>
+    </ul>
+    <script src="jquery.js"></script>
+    <script>
+$(document).ready(function(){
+    $("li").each(function(){
+        // you can also set the text by written in the text parameter values
+       var text= $(this).text();
+       console.log(text);
+    })
+})
+    </script>
+</body>
+</html>

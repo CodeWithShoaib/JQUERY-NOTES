@@ -1,0 +1,53 @@
+!<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #mydiv{
+            width: 20vw;
+            height: 20vh;
+            border: 1px solid black;
+        }
+        .pink{
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div id="mydiv">
+        <h1>I AM STRUGLING TO LEARNING JQUERY</h1>
+    </div>
+    <button id="btn">EVENT REMOVER</button>
+    <script src="jquery.js"></script>
+    <script>
+    // THROUGH ON METHOD WE CAN ADD MULTIPLE EVENTS     
+  $(document).ready(function(){
+      $("#mydiv").on({
+        //   strating applying functions of css
+        // 1-
+          "click":function(){
+              $(this).css("background-color","pink"); },
+        // 2-      
+        "mouseover":function(){
+              $(this).css("color","white"); },
+            //   3-
+              "mouseout":function(){
+              $(this).css({"background-color":"green","color":"black"}); }
+
+      })
+    //   off event
+    // off method is used to remove the function 
+    // which is add through on function
+    $("#btn").click(function(){
+$("#mydiv").off("mouseover mouseout")
+
+    })
+  })
+
+    </script>
+    
+</body>
+</html>

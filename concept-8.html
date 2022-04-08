@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOCUS EVENTS</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>LOGIN FORM</h1>
+        <!-- NAME -->
+        <form id="sform">
+
+            <label >YOUR NAME:</label>
+            <input type="text" placeholder="name" id="name" >
+            <!-- father name -->
+    <br><br><br>
+            <label >FATHER NAME:</label>
+            <input type="text" placeholder="fathername" id="fathername" >
+    <br>
+    <br><br>
+            <!-- password -->
+            <label >YOUR PASSWORD:</label>
+            <input type="password" placeholder="password" id="password" >
+            <br><br>
+            <!-- select conuntry --> <br>
+            <label>COUNTRY:</label>
+            <select id="select">
+            <option >PAKISTAN</option>
+            <option >INDIA</option>
+            <option >ENGLAND</option>
+            <option >AUSTRALIA</option>
+            </select>
+            
+    <br>
+    <button class="login">LOGIN</button>
+    
+    
+        </div>
+
+        </form>
+     
+    <script>
+        // FOCUS FUNCTION
+        $(document).ready(function(){
+            $("#name,#fathername,#password,#select").focus(function(){
+                $(this).css("background-color","pink");
+            })
+
+//   BLUR function
+
+            $("#name,#fathername,#password,#select").blur(function(){
+                $(this).css("background-color","transparent");
+            })
+
+//  CHNAGE function
+            $("#select").change(function(){
+                $(this).css("background-color","green")
+                $(this).css("color","white")
+            })
+
+
+
+  //  select function
+
+$("#name,#fathername,#password").select(function(){
+    $(this).css("background-color","yellow")
+})     
+
+
+// submit function:-
+$("#sform").submit(function(){
+    alert("YOUR FORM IS SUBMITED");
+})
+
+
+
+
+
+
+
+
+
+        })
+
+
+
+    
+            
+        
+        
+    </script>
+</body>
+</html>

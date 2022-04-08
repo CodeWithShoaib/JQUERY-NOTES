@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAS CLASS METHOD</title>
+</head>
+
+<body>
+    <div class="myid" id="geo">
+        <h1>I AM LEARNING JQUERY</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, commodi.</p>
+    </div>
+<button id="hasclassbtn">HAS CLASS</button>
+<script src="jquery.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#hasclassbtn").click(function(){
+            var c=$("#geo").hasClass("myid");
+            if(c==true){
+                console.log("YES THEIR IS A CLASS");
+
+            }
+            else{
+                console.log("NO THEIR IS NO CLASS");
+            }
+            
+
+
+            
+        })
+        
+    })
+</script>
+</body>
+
+</html>
